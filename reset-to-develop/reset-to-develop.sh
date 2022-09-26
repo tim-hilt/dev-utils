@@ -10,7 +10,7 @@ header() {
 }
 
 handle_choice() {
-    CHOICE=$(gum choose Stash Commit "Open Terminal")
+    CHOICE=$(gum choose "Stash" "Commit" "Open Terminal")
     case "$CHOICE" in
     "Stash")
         git stash
